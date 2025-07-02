@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'farcaster';
+    src:
+      url("./farcaster.ttf") format('truetype'),
+      url("./farcaster.woff") format('woff'),
+      url("./farcaster.svg") format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  .fc {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'farcaster' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    display: inline-block;
+    text-rendering: auto;
+  }
+  
+  .fc-square-farcaster:before {
+    content: "\3a0";
+  }
+  .fc-farcaster:before {
+    content: "\3c0";
+  }
+  [class^="fc-"], [class*=" fc-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+  
+    display: inline-block;
+    text-rendering: auto;
+  }
+  /*--//farcaster-icon-css--*/
+  .social-farcaster-icon::before{
+      content: "\3a0";
+      font-family: 'farcaster'; /* Use the correct font-family name */
+      display: inline-block;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+    }

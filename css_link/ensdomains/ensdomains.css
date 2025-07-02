@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Satoshi";
+  src: url("/assets/css_link/ensdomains/fonts/Satoshi/fonts/Satoshi-Medium.woff2")
+      format("woff2"),
+    url("/assets/css_link/ensdomains/fonts/Satoshi/fonts/Satoshi-Medium.woff")
+      format("woff"),
+    url("/assets/css_link/ensdomains/fonts/Satoshi/fonts/Satoshi-Medium.ttf")
+      format("truetype");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Satoshi-Bold";
+  src: url("/assets/css_link/ensdomains/fonts/Satoshi/fonts/Satoshi-Bold.woff2")
+      format("woff2"),
+    url("/assets/css_link/ensdomains/fonts/Satoshi/fonts/Satoshi-Bold.woff")
+      format("woff"),
+    url("/assets/css_link/ensdomains/fonts/Satoshi/fonts/Satoshi-Bold.ttf")
+      format("truetype");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+main#links {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  border: 1px solid rgb(232, 232, 232);
+  padding: 16px 20px;
+  font-family: "Satoshi", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif !important;
+}
+
+.website_link .link-btn {
+  color: rgb(56, 136, 255) !important;
+  background: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  width: min-content;
+  margin: auto;
+  font-size: 1.1rem !important;
+  font-weight: 500 !important;
+  line-height: 1.25rem;
+}
+
+.website_link .link-btn:hover {
+  background: none !important;
+  transform: translateY(0px) !important;
+}
+
+.avatarleft>div {
+  align-items: start !important;
+}
+
+.h1{
+  font-size: 30px !important;
+  line-height: 34px !important;
+  font-weight: 700 !important;
+}
+
+.paragraph {
+  margin: 0 !important;
+}
+
+.paragraph .card-body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.paragraph .card{
+background: none !important;
+box-shadow: none !important;
+}
+
+.link-hover-effect .link-btn:hover {
+  transform: scale(1) !important;
+  background: #fff !important;
+  transform: translateY(-1px) !important;
+  background: rgb(232, 232, 232) !important;
+}
+.titleleft {
+  margin-bottom: 0 !important;
+}
+
+.titleleft h2.h2 {
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  line-height: 1.25rem !important;
+  margin-left: 0.5rem !important;
+}
+
+.link-btn {
+  font-weight: 500 !important;
+  font-size: 1em !important;
+  padding: 0.6em 3em !important;
+  font-family: "Satoshi", sans-serif !important;
+}
+
+.link-btn-image-wrapper {
+  margin-left: 0rem;
+  left: 10px;
+  height: auto;
+  width: auto;
+}
+
+
+.link-btn span svg,
+.link-big-btn .link-big-icon-wrapper svg {
+  position: absolute;
+  right: 8px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  font-size: 14px;
+  opacity: .4;
+}
+.link-big-btn .link-big-icon-wrapper svg {
+  right: 14px;
+}
+
+.link-hover-animation:hover {
+  transform: scale(1) !important;
+}
+
+.link-big-btn {
+  padding: 0.6rem 1rem !important;
+}
+.link-big-btn-image-wrapper {
+  width: auto;
+  height: auto;
+}
+
+
+.banner-image img {
+  width: 100%;
+  height: 7em !important;
+  border-radius: 16px !important;
+  border-top-left-radius: 16px !important;
+  border-top-right-radius: 16px !important;
+  object-fit: cover;
+  object-position: top;
+}
+
+@media screen and (max-width:480px) {
+  .banner-image img {
+    height: 6em !important;
+  }
+}
+
+.link-btn-rounded,.link-grid-image-wrapper {
+  border-radius: 8px !important;
+}
+
+.link-btn-image-wrapper .link-btn-rounded {
+  border-radius: 0px !important;
+}
+
+div:has(.link-btn) {
+  margin-bottom: 5px !important;
+}
+
+.link-body {
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  min-height: 100%;
+  font-family: "Satoshi", sans-serif, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif !important;
+}
+
+
+.link-content {
+  padding-top: 0.5rem;
+}
+
+.link-image {
+  width: 125px;
+  height: 125px;
+  object-fit: contain;
+}
+
+.rounded_image img,.link-grid-image-wrapper {
+  border-radius: 16px !important;
+}
+
+.link-image {
+  margin-top: -80px;
+}
+
+.link-btn-image {
+  width: 24px !important;
+  height: 24px !important;
+  object-fit: cover !important;
+  margin-top: 10px !important;
+}

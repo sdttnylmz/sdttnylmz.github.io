@@ -1,0 +1,345 @@
+body {
+    font-family: 'Outfit', sans-serif;
+    }
+    .spinner {
+    width: 56px;
+    height: 56px;
+    display: grid;
+    border: 4.5px solid #0000;
+    border-radius: 50%;
+    border-color: #ffffff #0000;
+    animation: spinner-e04l1k 1s infinite linear;
+    margin-left: 45%;
+    margin-top: 45%;
+    }
+    .spinner::before,
+    .spinner::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+    }
+    .spinner::before {
+    border-color: #623ea4 #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+    }
+    .spinner::after {
+    margin: 8.9px;
+    }
+    @keyframes spinner-e04l1k {
+    100% {
+    transform: rotate(1turn);
+    }
+    }
+    /* Custom styles */
+    .card-container {
+    max-width: 600px;
+    height: 80%;
+    margin: 20px auto;
+    font-size: 14px;
+    background:#8a63d2;
+    border: 1px solid #8a63d2;
+    border-radius: 10px ;
+    padding: 0;
+    }
+    .navbar-card {
+    width: 100%;
+    background:#8a63d2;
+    color:#ffffff;
+    padding: 10px ;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+    border-radius: 10px;
+    }
+    .navbar-brand{
+    display:flex;
+    align-items: center;
+    color: #ffffff; 
+    font-size: 20px;
+    font-weight: 600;
+    }
+    .navbar-brand svg{
+    padding-right: 5px;
+    }
+    /* Customizes the background of the scrollbar track */
+    #activity-feed::-webkit-scrollbar-track {
+    background-color: transparent; /* Your desired color */
+    }
+    /* Customizes the scrollbar handle */
+    #activity-feed::-webkit-scrollbar-thumb {
+    background-color: #5f3788; /* A darker purple, for example */
+    border-radius: 50px;
+    }
+    /* Customizes the size of the scrollbar */
+    #activity-feed::-webkit-scrollbar {
+    width: 8px; /* or any other size */
+    }
+    #activity-feed {
+    padding: 15px 15px 15px 30px; /* space for navbar */
+    overflow-y: scroll;
+    /* scrollbar-color: inherit; */
+    background-color: #8a63d2;
+    height: calc(100vh - 40px); /* Adjust the height as needed */
+    border-radius: 10px;
+    }
+    .activity-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+    padding: 16px;
+    padding-top: 0px;
+    border-radius: 6px;
+    position: relative;
+    background: #623ea4;
+    }
+    .activity-item:last-child {
+    margin-bottom: 0;
+    }
+    .activity-header {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    }
+    .box{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    }
+    .d-flex{
+    margin-top: 10px;
+    margin-left: 10px;
+    overflow: auto;
+    padding-left: 5px;
+    }
+    .card{
+    width: 60%; 
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    }
+    .message{
+     width: 60%; 
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    }
+    h2 {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0 0 8px 0;
+    font-weight: 500;
+    }
+    .text {
+    width: 100%;
+    color: #fff;
+    margin: 0;
+    line-height: 1.4;
+    }
+    a {
+    display: flex;      
+    justify-content: center; 
+    text-decoration: none;   
+    color: #fff;        
+    }
+    a:hover {
+    text-decoration: underline;
+    }
+    .activity-media img, .activity-media video {
+    max-width: 100%;
+    height: auto;
+    margin-top: 8px;
+    }
+    .activity-date {
+    font-size: 12px;
+    color: #ffffff;
+    text-align: right;
+    margin-top: 8px;
+    align-self: flex-end;
+    }
+    .activity-icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 1px;
+    font-size: 10px;
+    color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    left: -18px;
+    top: 20px;
+    }
+    .activity-content {
+    flex-grow: 1;
+    }
+    #load-more {
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    }
+    #no-more-items {
+    background: #8a63d2;
+    text-align: center;
+    display: none;
+    color: #fff
+    }
+    #profile-info{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    }
+    #no-activities-msg {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100%;
+    }
+
+    /* poap */
+
+    .poaps{
+        background: #fff;
+        border: .05rem solid hsla(0,0%,7%,.075);
+        border-radius: .8rem;
+        box-shadow: 0 0.1rem 0.2rem hsla(0,0%,7%,.04);
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow: hidden;
+        padding: 1rem;
+        padding-top: 0;
+        padding-bottom: 0;
+        text-decoration: none;
+        transition: all .25s ease-in-out;
+        max-width: 600px;
+        margin: 20px auto;
+        }
+        .headerpoap{
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        }
+        .headerpoap h2{
+        font-family: 'Outfit', sans-serif;
+        font-size: 20px;
+        font-weight: 600;
+        }
+        .containerpoap {
+        padding-left: 50px;
+        height: 150px; /* Default height to show 50% of the data */
+        overflow: hidden;
+        transition: height 0.5s ease; /* Smooth transition for height change */
+        }
+        .containerpoap p{
+        color: #958bff;
+        font-size: 25px;
+        font-family: 'Outfit', sans-serif;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100%;
+        }
+        .image-style {
+        width: 100px; /* example width */
+        height: auto; /* maintain aspect ratio */
+        margin-bottom: 10px;
+        border-radius: 50%; /* rounded corners */
+        margin-left: -20px;
+        }
+        .expanded {
+        height: auto;
+        }
+        /* Add any additional styles for the button and container */
+        #toggleButtonpoap {
+        width: 40px; /* Button styles */
+        border-radius: 10px;
+        background: #958bff;
+        border-color:#958bff;
+        box-shadow: none;
+        border: none;
+        }
+        #toggleButtonpoap svg {
+        color: #fff;
+        }
+
+        /* mirror */
+
+        .full{
+            max-width: 600px;
+            margin: 20px auto;            
+        }
+        .navbar { 
+            display: flex;
+            justify-content: flex-start;
+            width: 100%;
+            background: #fff; 
+            position: sticky; 
+            top: 0; 
+            color: white; 
+            /* padding: 10px; */
+            z-index: 1020;
+        }
+        .brand{
+            color: black;
+            font-size: 20px;
+            padding-left: 10px;
+            font-weight: 700;
+        }
+        .card-mirror { 
+            border: none;
+            margin: 10px; 
+            padding: 5px; 
+        }
+        .popup { 
+            display: none; 
+            position: fixed; 
+            top: 0; left: 0; 
+            width: 100%; 
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            z-index: 1040;
+            padding: 40px;
+            box-sizing: border-box;
+            overflow-y: auto;
+        }
+        .content{
+            width: 850px;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 20px auto;
+
+        }
+        .photo{
+            width:100%;
+            height: auto;
+            margin-bottom: 15px; /* Space below each image */
+        max-width: 800px; /* Maximum width */
+        margin-left: auto; /* Center align */
+        margin-right: auto; /* Center align */
+        }
+        .image{
+            width:100%;
+            height: auto;
+            margin-bottom: 15px; /* Space below each image */
+        max-width: 800px; /* Maximum width */
+     
+
+        }
+        #cardContainer{
+            overflow-y: scroll;
+            height: calc(100vh - 40px);
+        }
+       
